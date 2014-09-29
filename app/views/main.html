@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>{{favAlbum.user}}'s Fav Albums</h2>
+    <!-- Todos input -->
+    <form role="form" ng-submit="addAlbum()">
+        <div class="row">
+            <div class="input-group">
+                <input type="text" ng-model="album" placeholder="What needs to be done?" class="form-control">
+        <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary" value="Add">
+        </span>
+            </div>
+        </div>
+    </form>
+    <p></p>
+    <div ui-sortable ng-model="albums">
+        <p class="input-group" ng-repeat="album in albums" style="padding:5px 10px; cursor: move;">
+            <input type="text" ng-model="album" class="form-control">
+        <span class="input-group-btn">
+        <button class="btn btn-danger" ng-click="removeAlbum($index)" aria-label="Remove">X</button>
+      </span>
+        </p>
+    </div>
+</div>

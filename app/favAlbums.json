@@ -1,0 +1,32 @@
+[
+    {
+        "album": "Meddle",
+        "artist": "Pink Floyd",
+        "genre": "Classic Rock",
+        "owned": true
+    },
+    {
+        "album": "Dark Side of the Moon",
+        "artist": "Pink Floyd",
+        "genre": "Classic Rock",
+        "owned": true
+    },
+    {
+        "album": "OK Computer",
+        "artist": "Radiohead",
+        "genre": "Classic Alternative",
+        "owned": true
+    },
+    {
+        "album": "Z",
+        "artist": "My Morning Jacket",
+        "genre": "Stoner Rock",
+        "owned": true
+    },
+    {
+        "album": "El Pintor",
+        "artist": "Interpol",
+        "genre": "Alternative",
+        "owned": false
+    }
+]
