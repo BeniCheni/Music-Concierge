@@ -1,0 +1,6 @@
+MusicConcierge
+==============
+
+Music Concierge - Start with Fav Album list; Open-Ended development around things about music; using Yeoman Angular Generator to scaffold the stack, Bower for dependencies and package management; Grunt as task running for this Angular app; Basic Karma unit tests to adapt TDD...
+
+Will continue building little bit by little bit...
