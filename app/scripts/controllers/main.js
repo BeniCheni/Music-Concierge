@@ -12,23 +12,23 @@ var model = {
 };
 
 angular.module('musicConciergeApp')
-  .controller('MainCtrl', function ($scope, localStorageService) {
-    $scope.favAlbum = model;
+    .controller('MainCtrl', function ($scope, localStorageService) {
+        var albumsInCookie = localStorageService.get('albums');
+        $scope.albums = albumsInCookie && albumsInCookie.split('\n') || [];
+        model.wordGameQ = $scope.albums.randomPick().shuffle();
+        $scope.favAlbum = model;
+        $scope.answer = '';
 
-    var albumsInCookie = localStorageService.get('albums');
+        $scope.$watch('albums', function () {
+            localStorageService.add('albums', $scope.albums.join('\n'));
+        }, true);
 
-    $scope.albums = albumsInCookie && albumsInCookie.split('\n') || [];
+        $scope.addAlbum = function () {
+            $scope.albums.push($scope.album);
+            $scope.album = '';
+        };
 
-    $scope.$watch('albums', function () {
-        localStorageService.add('albums', $scope.albums.join('\n'));
-    }, true);
-
-    $scope.addAlbum = function () {
-        $scope.albums.push($scope.album);
-        $scope.album = '';
-    };
-
-    $scope.removeAlbum = function (index) {
-        $scope.albums.splice(index, 1);
-    };
+        $scope.removeAlbum = function (index) {
+            $scope.albums.splice(index, 1);
+        };
   });

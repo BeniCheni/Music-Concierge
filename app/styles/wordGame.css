@@ -1,0 +1,6 @@
+#wordGameHead {}
+#shuffledWord {display:inline-block;}
+#shuffledWordMark {padding:13px;}
+#wordGameQSpan {font-size:30px; color:lightslategray; vertical-align:sub;}
+#correctAnswer {font-size:30px; display:none; background:purple; color:chartreuse; width:120px; height:125px;
+    text-align:center; padding-top:3px;}

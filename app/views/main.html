@@ -1,23 +1,56 @@
-<div class="container">
-    <h2>{{favAlbum.user}}'s Fav Albums</h2>
-    <!-- Todos input -->
-    <form role="form" ng-submit="addAlbum()">
-        <div class="row">
-            <div class="input-group">
-                <input type="text" ng-model="album" placeholder="Got a cool album to add?" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="Add">
-        </span>
-            </div>
+<div id="wordGameContainer" class="panel panel-info">
+    <div id="wordGameHead" class="panel-heading">
+        <h2>Word Game</h2>
+    </div>
+    <div class="panel-body">
+        <h5>Guess the name of 1 of your favor albums below from the generated shuffled letter?</h5>
+        <div id="shuffledWord">
+            <mark id="shuffledWordMark">Shuffled Word is <span id="wordGameQSpan">{{favAlbum.wordGameQ}}</span>.</mark>
         </div>
-    </form>
-    <p></p>
-    <div ui-sortable ng-model="albums">
-        <p class="input-group" ng-repeat="album in albums" style="padding:5px 10px; cursor: move;">
-            <input type="text" ng-model="album" class="form-control">
-        <span class="input-group-btn">
-        <button class="btn btn-danger" ng-click="removeAlbum($index)" aria-label="Remove">X</button>
-      </span>
-        </p>
+        <div id="correctAnswer">
+            <span class="glyphicon glyphicon-flag"></span>
+            <span class="glyphicon glyphicon-headphones"></span>
+            <span class="glyphicon glyphicon-volume-up"></span>
+            <span class="glyphicon glyphicon-volume-up"></span>
+            <span class="glyphicon glyphicon-heart"></span>
+            <span class="glyphicon glyphicon glyphicon-thumbs-up"></span>
+            <span class="glyphicon glyphicon glyphicon-eye-open"></span>
+        </div>
+        <br><br>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="answer">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Answer!</button>
+                </span>
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div>
+</div>
+<div id="favAlbumcontainer" class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>{{favAlbum.user}}'s Fav Albums</h2>
+    </div>
+    <div class="panel-body">
+        <!-- Todos input -->
+        <form role="form" ng-submit="addAlbum()">
+            <div class="text-center">
+                <div class="input-group">
+                    <input type="text" ng-model="album" placeholder="Got a cool album to add?" class="form-control">
+                    <span class="input-group-btn">
+                        <input type="submit" class="btn btn-primary" value="Add">
+                    </span>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div ui-sortable ng-model="albums">
+            <p class="input-group" ng-repeat="album in albums" style="padding:5px 10px; cursor: move;">
+                <input type="text" ng-model="album" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" ng-click="removeAlbum($index)" aria-label="Remove">X</button>
+                </span>
+            </p>
+        </div>
     </div>
 </div>
