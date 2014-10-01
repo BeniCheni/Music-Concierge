@@ -1,5 +1,5 @@
 <div id="wordGameContainer" class="panel panel-info">
-    <div id="wordGameHead" class="panel-heading">
+    <div class="panel-heading">
         <h2>Word Game</h2>
     </div>
     <div class="panel-body">
@@ -7,21 +7,26 @@
         <div id="shuffledWord">
             <mark id="shuffledWordMark">Shuffled Word is <span id="wordGameQSpan">{{favAlbum.wordGameQ}}</span>.</mark>
         </div>
+
         <div id="correctAnswer">
-            <span class="glyphicon glyphicon-flag"></span>
-            <span class="glyphicon glyphicon-headphones"></span>
-            <span class="glyphicon glyphicon-volume-up"></span>
-            <span class="glyphicon glyphicon-volume-up"></span>
-            <span class="glyphicon glyphicon-heart"></span>
-            <span class="glyphicon glyphicon glyphicon-thumbs-up"></span>
-            <span class="glyphicon glyphicon glyphicon-eye-open"></span>
+            <div id="congrats"><strong>YOU ARE CORRECT!</strong></div>
+            &nbsp;&nbsp;&nbsp;
+            <div id="victoryIcon">
+                <span class="glyphicon glyphicon-flag"></span>
+                <span class="glyphicon glyphicon-headphones"></span>
+                <span class="glyphicon glyphicon-volume-up"></span>
+                <span class="glyphicon glyphicon-volume-up"></span>
+                <span class="glyphicon glyphicon-heart"></span>
+                <span class="glyphicon glyphicon glyphicon-thumbs-up"></span>
+                <span class="glyphicon glyphicon glyphicon-eye-open"></span>
+            </div>
         </div>
         <br><br>
         <div class="col-lg-6">
             <div class="input-group">
-                <input type="text" class="form-control" ng-model="answer">
+                <input type="text" class="form-control" ng-model="answer" ng-model="answer">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Answer!</button>
+                    <button class="btn btn-default" type="button" ng-click="checkAnswer()">Answer!</button>
                 </span>
             </div><!-- /input-group -->
         </div><!-- /.col-lg-6 -->

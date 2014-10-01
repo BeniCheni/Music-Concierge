@@ -15,9 +15,17 @@ angular.module('musicConciergeApp')
     .controller('MainCtrl', function ($scope, localStorageService) {
         var albumsInCookie = localStorageService.get('albums');
         $scope.albums = albumsInCookie && albumsInCookie.split('\n') || [];
-        model.wordGameQ = $scope.albums.randomPick().shuffle();
+        model.wordGameAlbum = $scope.albums.randomPick();
+        model.wordGameQ = model.wordGameAlbum.shuffle();
         $scope.favAlbum = model;
         $scope.answer = '';
+
+        $scope.checkAnswer = function () {
+            if ($scope.answer === $scope.favAlbum.wordGameAlbum) {
+                $('#correctAnswer').css('display', 'inline-flex');
+                $scope.answer = '';
+            }
+        };
 
         $scope.$watch('albums', function () {
             localStorageService.add('albums', $scope.albums.join('\n'));
