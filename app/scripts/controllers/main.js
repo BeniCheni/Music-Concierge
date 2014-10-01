@@ -16,15 +16,17 @@ var model = {
 
 angular.module('musicConciergeApp')
     .controller('MainCtrl', function ($scope, localStorageService) {
-        var albumsInCookie = localStorageService.get('albums');
-        $scope.albums = albumsInCookie && albumsInCookie.split('\n') || [];
-        model.wordGameAlbum = $scope.albums.randomPick();
-        model.wordGameQ = model.wordGameAlbum.shuffle();
-        $scope.favAlbum = model;
-        $scope.answer = '';
+        $scope.resetWordGameQ = function () {
+            if ($scope.albums.length > 0) {
+                $scope.wordGameAlbum = $scope.albums.randomPick();
+                if (!!$scope.wordGameAlbum) {
+                    $scope.wordGameQ = $scope.wordGameAlbum.shuffle();
+                }
+            }
+        };
 
         $scope.checkAnswer = function () {
-            if ($scope.answer === $scope.favAlbum.wordGameAlbum) {
+            if ($scope.answer === $scope.wordGameAlbum) {
                 $('#correctAnswer').css('display', 'inline-flex');
                 $scope.answer = '';
             }
@@ -37,9 +39,17 @@ angular.module('musicConciergeApp')
         $scope.addAlbum = function () {
             $scope.albums.push($scope.album);
             $scope.album = '';
+            $scope.resetWordGameQ();
         };
 
         $scope.removeAlbum = function (index) {
             $scope.albums.splice(index, 1);
+            $scope.resetWordGameQ();
         };
-  });
+
+        var albumsInCookie = localStorageService.get('albums');
+        $scope.albums = albumsInCookie && albumsInCookie.split('\n') || [];
+        $scope.resetWordGameQ();
+        $scope.favAlbum = model;
+        $scope.answer = '';
+    });

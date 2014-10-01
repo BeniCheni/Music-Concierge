@@ -2,23 +2,18 @@
 
 describe('Controller: MainCtrl', function () {
 
-  // load the controller's module
-  beforeEach(module('musicConciergeApp'));
+    // load the controller's module
+    beforeEach(module('musicConciergeApp'));
 
-  var MainCtrl,
-    scope;
+    var MainCtrl, scope;
 
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
-      $scope: scope
-    });
-  }));
-
-//    it('should have no albums when app launches', function () {
-//        expect(scope.todos.length).toBe(0);
-//    });
+    // Initialize the controller and a mock scope
+    beforeEach(inject(function ($controller, $rootScope) {
+        scope = $rootScope.$new();
+        MainCtrl = $controller('MainCtrl', {
+            $scope: scope
+        });
+    }));
 
     it('should add albums to the list', function () {
         scope.album = 'Test 1';
