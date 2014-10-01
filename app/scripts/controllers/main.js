@@ -7,6 +7,9 @@
  * # MainCtrl
  * Controller of the musicConciergeApp
  */
+
+/*global $:false */
+
 var model = {
     user: 'Beni Cheni'
 };
