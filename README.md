@@ -7,11 +7,16 @@ http://music-concierge.herokuapp.com/#/
 Sep 30th, 2014 - Added Word Game
 Oct 1st, 2014 - Added dist to GitHub and deployed the app to Heroku
 
-Music Concierge - Start with Fav Album list with adding and removing, drag-and-drop sortable; Record persists in your local browser's cookie. You records would be still there after you refresh. Open-Ended development around things about music.
+Music Concierge -
+- Start with Fav Album list with adding and removing, drag-and-drop sortable.
+- Record persists in your local browser's cookie. You records would be still there after you refresh.
+- A Word Game guessing shuffled words based on users' saved album names.
 
-Technologies - Angular app; Bootstrap; Yeoman; Bower; Grunt; Karma test framework (May try Protractor later)
+Open-Ended development around things about music, or even beyond. Really an open space to practice modern front-end technologies now.
 
-Using Yeoman Angular Generator to scaffold the stack, Bower for dependencies and package management; Grunt as task running for this Angular app; Basic Karma unit tests to adapt TDD...
+Technologies - Angular app; Bootstrap; Yeoman; Bower; Grunt; Karma test framework (May try Protractor later); HTML5; CSS3
+
+Using Yeoman Angular Generator to scaffold the stack, Bower for dependencies and package management; Grunt as task runner for this Angular app; Basic Karma unit tests to adapt TDD...
 
 Will continue building little bit by little bit...
 
@@ -28,5 +33,5 @@ To-Do -
 
 Thanks for viewing. Please contribute if you'd like to practice coding Front-End modern technologies.
 
-Beni Cheni
+-- Beni Cheni
 benjaminlchen@gmail.com
