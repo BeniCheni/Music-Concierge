@@ -11,19 +11,16 @@
 /*global $:false */
 
 var model = {
-    user: 'Beni Cheni'
+    user: 'Beni Cheni',
+    LAST_FM_API_END_POINT: 'http://ws.audioscrobbler.com/2.0/',
+    API_KEY: 'f8f9d955b4b26d87955d54e5ac984857',
+    DATA_FORMAT: 'json',
+    apiMethod: '',
+    artist: ''
 };
 
 angular.module('musicConciergeApp')
-    .controller('MainCtrl', function ($scope, localStorageService) {
-        $scope.resetWordGameQ = function () {
-            if ($scope.albums.length > 0) {
-                $scope.wordGameAlbum = $scope.albums.randomPick();
-                if (!!$scope.wordGameAlbum) {
-                    $scope.wordGameQ = $scope.wordGameAlbum.shuffle();
-                }
-            }
-        };
+    .controller('MainCtrl', function ($scope, $http, $templateCache) {
 
         $scope.checkAnswer = function () {
             if ($scope.answer === $scope.wordGameAlbum) {
@@ -32,24 +29,35 @@ angular.module('musicConciergeApp')
             }
         };
 
-        $scope.$watch('albums', function () {
-            localStorageService.add('albums', $scope.albums.join('\n'));
-        }, true);
-
-        $scope.addAlbum = function () {
-            $scope.albums.push($scope.album);
-            $scope.album = '';
-            $scope.resetWordGameQ();
-        };
-
-        $scope.removeAlbum = function (index) {
-            $scope.albums.splice(index, 1);
-            $scope.resetWordGameQ();
-        };
-
-        var albumsInCookie = localStorageService.get('albums');
-        $scope.albums = albumsInCookie && albumsInCookie.split('\n') || [];
-        $scope.resetWordGameQ();
         $scope.favAlbum = model;
         $scope.answer = '';
+
+        $scope.groovyOnLastfm = function () {
+            $scope.method = 'GET';
+            model.apiMethod = 'artist.gettopalbums';
+
+            $scope.url = model.LAST_FM_API_END_POINT + '?method=' + model.apiMethod + '&artist=' + $scope.artist +
+                            '&api_key=' + model.API_KEY + '&format=' + model.DATA_FORMAT;
+
+            $scope.code = null;
+            $scope.response = null;
+
+            $http({method: $scope.method, url: $scope.url, cache: $templateCache}).
+                success(function (data, status) {
+                    $scope.status = status;
+                    $scope.data = data;
+                    $scope.wordGameAlbum = data.topalbums.album.randomPick();
+                    $scope.resetWordGameQ();
+                }).
+                error(function (data, status) {
+                    $scope.data = data || 'Request failed';
+                    $scope.status = status;
+                });
+        };
+
+        $scope.resetWordGameQ = function () {
+            //if (!!$scope.wordGameAlbum) {
+                $scope.wordGameQ = $scope.wordGameAlbum.name.shuffle();
+            //}
+        };
     });

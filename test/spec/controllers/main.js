@@ -15,16 +15,16 @@ describe('Controller: MainCtrl', function () {
         });
     }));
 
-    it('should add albums to the list', function () {
-        scope.album = 'Test 1';
-        scope.addAlbum();
-        expect(scope.albums.length).toBe(1);
-    });
-
-    it('should add then remove an album from the list', function () {
-        scope.album = 'Test 1';
-        scope.addAlbum();
-        scope.removeAlbum(0);
-        expect(scope.albums.length).toBe(0);
-    });
+//    it('should add albums to the list', function () {
+//        scope.album = 'Test 1';
+//        scope.addAlbum();
+//        expect(scope.albums.length).toBe(1);
+//    });
+//
+//    it('should add then remove an album from the list', function () {
+//        scope.album = 'Test 1';
+//        scope.addAlbum();
+//        scope.removeAlbum(0);
+//        expect(scope.albums.length).toBe(0);
+//    });
 });
