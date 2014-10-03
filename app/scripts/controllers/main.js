@@ -45,9 +45,35 @@ angular.module('musicConciergeApp')
             $http({method: $scope.method, url: $scope.url, cache: $templateCache}).
                 success(function (data, status) {
                     $scope.status = status;
-                    $scope.data = data;
-                    $scope.wordGameAlbum = data.topalbums.album.randomPick();
-                    $scope.resetWordGameQ();
+                    $('#noTotal').css('display', 'none');
+                    $('#error').css('display', 'none');
+                    $('.result').css('display', 'none');
+
+                    if (data.hasOwnProperty('topalbums')) {
+                        if (!data.topalbums.hasOwnProperty('total')) {
+                            $('.results').css('display', 'block');
+                            $scope.data = data;
+                            $scope.wordGameAlbum = data.topalbums.album.randomPick();
+                            $scope.resetWordGameQ();
+                            return;
+                        }
+                    }
+
+                    if (data.hasOwnProperty('topalbums')) {
+                        if (data.topalbums.hasOwnProperty('total')) {
+                            if (data.topalbums.total === '0') {
+                                $('#noTotal').css('display', 'block');
+                            }
+                        }
+                        return;
+                    }
+
+                    if (data.hasOwnProperty('error')) {
+                        $('#error').css('display', 'block');
+                        $scope.error = data.error;
+                        $scope.message = data.message;
+                        return;
+                    }
                 }).
                 error(function (data, status) {
                     $scope.data = data || 'Request failed';

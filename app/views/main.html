@@ -3,7 +3,7 @@
         <h2>Word Game</h2>
     </div>
     <div class="panel-body">
-        <h5>Guess the name of 1 of your favor albums below from the generated shuffled letter?</h5>
+        <h5>Guess the name of 1 of Last.fm top ranks albums below from the generated shuffled letter?</h5>
         <div id="shuffledWord">
             <mark id="shuffledWordMark">Shuffled Word is <span id="wordGameQSpan">{{wordGameQ}}</span>.</mark>
         </div>
@@ -52,10 +52,20 @@
             </div>
         </form>
         <br>
-        <div ui-sortable ng-model="albums">
-            <p class="text-info" ng-repeat="(key, data) in data.topalbums.album" style="padding:5px 10px; cursor: move;">
-                {{data.name}}
-            </p>
+        <div id="lastFmResults" ng-model="albums">
+            <div class="result" ng-repeat="(key, data) in data.topalbums.album" style="padding:5px 10px; cursor: move;">
+                <h5 style="color:orchid;">{{data.name}}</h5>
+                <em>Play Count:</em> {{data.playcount}}<br><em>Last.fm link:</em> {{data.url}}
+            </div>
+            <div id="error" style="display: none;">
+                <h4><em style="color: red">Last.fm API Response Error</em></h4>
+                Last.fm Error Code: {{error}}
+                <br><br>
+                Error Message: {{message}}
+            </div>
+            <div id="noTotal" style="display: none;">
+                <em style="color: red">No results found... Check your search input...</em>
+            </div>
         </div>
     </div>
 </div>
