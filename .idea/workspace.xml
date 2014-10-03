@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="d4cc5e76-4ddf-4004-a770-ef7ca4afa79a" name="Default" comment="" />
-    <list default="true" id="d0570aa9-07be-4e9d-8fa5-2d66f9f0f930" name="New changelist" comment="Updated Last.fm Search Title">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/scripts.b4419edf.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/wordGame.css" afterPath="$PROJECT_DIR$/app/styles/mainExtra.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/main.html" afterPath="$PROJECT_DIR$/dist/views/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+    <list default="true" id="d0570aa9-07be-4e9d-8fa5-2d66f9f0f930" name="New changelist" comment="Error Handling on&#10;- Total results = 0&#10;- Last.fm API error code and message&#10;&#10;Added Play Count and Last.fm URL per album">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="musicConcierge.iws" />
@@ -585,7 +578,11 @@
       <created>1412313607540</created>
       <updated>1412313607540</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Error Handling on&#10;- Total results = 0&#10;- Last.fm API error code and message&#10;&#10;Added Play Count and Last.fm URL per album">
+      <created>1412349085014</created>
+      <updated>1412349085014</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -641,7 +638,8 @@
     <MESSAGE value="dist directory for Heroku build" />
     <MESSAGE value="Last.fm API Redesign" />
     <MESSAGE value="Updated Last.fm Search Title" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Last.fm Search Title" />
+    <MESSAGE value="Error Handling on&#10;- Total results = 0&#10;- Last.fm API error code and message&#10;&#10;Added Play Count and Last.fm URL per album" />
+    <option name="LAST_COMMIT_MESSAGE" value="Error Handling on&#10;- Total results = 0&#10;- Last.fm API error code and message&#10;&#10;Added Play Count and Last.fm URL per album" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
