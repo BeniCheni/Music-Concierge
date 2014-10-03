@@ -4,7 +4,7 @@
     <list id="d4cc5e76-4ddf-4004-a770-ef7ca4afa79a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list default="true" id="d0570aa9-07be-4e9d-8fa5-2d66f9f0f930" name="New changelist" comment="" />
+    <list default="true" id="d0570aa9-07be-4e9d-8fa5-2d66f9f0f930" name="New changelist" comment="Updated Last.fm Search Title" />
     <ignored path="musicConcierge.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
@@ -50,8 +50,8 @@
       <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43983403" vertical-offset="374" max-vertical-offset="990">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.7573222" vertical-offset="374" max-vertical-offset="990">
+              <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -606,7 +606,11 @@
       <created>1412309561084</created>
       <updated>1412309561084</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated Last.fm Search Title">
+      <created>1412312226351</created>
+      <updated>1412312226351</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -615,7 +619,7 @@
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53636366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5379939" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24936816" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -661,7 +665,8 @@
     <MESSAGE value="- Added logic to refresh Word Play question per adding or removing&#10;- Fixed Unit Tests&#10;- Needed to remove the Yeoman pgn for grunt imagine minify task to work" />
     <MESSAGE value="dist directory for Heroku build" />
     <MESSAGE value="Last.fm API Redesign" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last.fm API Redesign" />
+    <MESSAGE value="Updated Last.fm Search Title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Last.fm Search Title" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,8 +1081,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43983403" vertical-offset="374" max-vertical-offset="990">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.7573222" vertical-offset="374" max-vertical-offset="990">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
