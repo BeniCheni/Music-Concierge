@@ -9,11 +9,17 @@ Attempting to bridge technology and art making this weekend. Will add border and
 
 http://go-down-the-drain.herokuapp.com/secretTomb/BritishIsles.html
 
+<img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_1.png" alt="British Isles #1" ><br>
+<img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_2.png" alt="British Isles #2" ><br>
+<img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_3.png" alt="British Isles #3" ><br>
+<img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_4.png" alt="British Isles #4" >
+
 <strong>Music Concierge - Top Albums Search Engine using Last.fm (a music site) API and a word game based on the search results. Not very good yet. But it's there.</strong> -
 
 http://go-down-the-drain.herokuapp.com/#
 
-<img src="smiley.gif" alt="Smiley face">
+<img src="http://go-down-the-drain.herokuapp.com/images/Music_Concierge_1.png" alt="Music Concierge #1" ><br>
+<img src="http://go-down-the-drain.herokuapp.com/images/Music_Concierge_2.png" alt="Music Concierge #2" >
 
 Sep 30th, 2014 - Added Word Game
 
