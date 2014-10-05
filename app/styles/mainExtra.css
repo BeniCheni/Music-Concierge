@@ -1,7 +1,10 @@
+#shuffledWordHolder {display:inline;}
+#wordGameDiv {display:none;}
 #shuffledWord {display:inline-block;}
-#shuffledWordMark {padding:13px;}
-#wordGameQSpan {font-size:30px; color:lightslategray; vertical-align:sub;}
+#shuffledWordMark {padding:13px; display:block;}
+#wordGameQSpan {font-size:30px; color:lightslategray; vertical-align:sub; text-decoration:underline;}
 #correctAnswer {display:none;}
-#congrats {color:turquoise; position:relative; top:50px;}
+#congrats {color:turquoise; position:relative; top:20px;}
 #victoryIcon {font-size:30px; background:purple; color:chartreuse; width:120px; height:125px;
-    text-align:center; padding-top:3px;}
+    text-align:center; padding-top:3px; float:right;}
+#album {word-wrap:break-word;}

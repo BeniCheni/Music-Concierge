@@ -3,11 +3,25 @@
         <h2>Word Game</h2>
     </div>
     <div class="panel-body">
-        <h5>Guess the name of 1 of Last.fm top ranks albums below from the generated shuffled letter?</h5>
+        <h4>Search top albums below before you play this word game.</h4>
+        <h5>Guess the name of 1 of Last.fm top ranked albums below from the generated shuffled letter?</h5>
         <div id="shuffledWord">
-            <mark id="shuffledWordMark">Shuffled Word is <span id="wordGameQSpan">{{wordGameQ}}</span>.</mark>
+            <mark id="shuffledWordMark">Shuffled Word is
+                <div id="shuffledWordHolder">
+                    <em>__________ (<strong>AWAITING RESULTS FROM SEARCH BELOW</strong>).</em>
+                </div>
+                <div id="wordGameDiv"><span id="wordGameQSpan">{{wordGameQ}}</span>.  <em>GUESS NOW!!!</em></div>
+            </mark>
         </div>
-
+        <br><br>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="answer">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" ng-click="checkAnswer()">Answer!</button>
+                </span>
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
         <div id="correctAnswer">
             <div id="congrats"><strong>YOU ARE CORRECT!</strong></div>
             &nbsp;&nbsp;&nbsp;
@@ -21,22 +35,13 @@
                 <span class="glyphicon glyphicon glyphicon-eye-open"></span>
             </div>
         </div>
-        <br><br>
-        <div class="col-lg-6">
-            <div class="input-group">
-                <input type="text" class="form-control" ng-model="answer" ng-model="answer">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" ng-click="checkAnswer()">Answer!</button>
-                </span>
-            </div><!-- /input-group -->
-        </div><!-- /.col-lg-6 -->
     </div>
 </div>
 </div>
 <div id="favAlbumcontainer" class="panel panel-primary">
     <div class="panel-heading">
-        <h4>To see the top albums ranked by Last.FM API for your favor band or artist?  Search with the band's name or the artist's.
-            <br><br>And play a Word Game to guess the name of a randomly picked album.  Voilá!
+        <h4>Do you Want to see the top albums of your favorite band or artist?<br><br>Search Last.fm API (Last.fm is a music website) with the name of the band or artist.
+            <br><br>And play a Word Game above to guess the name of a randomly picked album.  Voilá!
         </h4>
     </div>
     <div class="panel-body">
@@ -44,18 +49,20 @@
         <form role="form" ng-submit="groovyOnLastfm()">
             <div class="text-center">
                 <div class="input-group">
-                    <input type="text" ng-model="artist" placeholder="Enter a band or a singer to see the top albums ranked by Last.fm API?" class="form-control">
+                    <input type="text" ng-model="artist" placeholder="Enter a band or a singer to see the top albums?" class="form-control">
                     <span class="input-group-btn">
-                        <input type="submit" class="btn btn-primary" value="~~~Groovy~~~">
+                        <input type="submit" class="btn btn-primary" value="~~~Groovy Albums~~~">
                     </span>
                 </div>
             </div>
         </form>
         <br>
         <div id="lastFmResults" ng-model="albums">
-            <div class="result" ng-repeat="(key, data) in data.topalbums.album" style="padding:5px 10px; cursor: move;">
+            <div id="album" class="result" ng-repeat="(key, data) in data.topalbums.album" style="padding:5px 10px; cursor: move;">
                 <h5 style="color:orchid;">{{data.name}}</h5>
-                <em>Play Count:</em> {{data.playcount}}<br><em>Last.fm link:</em> {{data.url}}
+                <em>Play Count on Last.fm Music Site:</em> {{data.playcount}}
+                <br>
+                <em>Last.fm link:</em> {{data.url}}
             </div>
             <div id="error" style="display: none;">
                 <h4><em style="color: red">Last.fm API Response Error</em></h4>
