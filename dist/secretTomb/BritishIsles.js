@@ -44,17 +44,17 @@ $(document).ready(function() {
             $('.subunit.WLS').css('fill', pickRandomColor('walesColor'));
         }, 4000);
         window.setInterval(function() {
-            $('.subunit.WLS').css('fill', pickRandomColor('northernIrelandColor'));
+            $('.subunit.NIR').css('fill', pickRandomColor('northernIrelandColor'));
         }, 3000);
         window.setInterval(function() {
-            $('.subunit.WLS').css('fill', pickRandomColor('irelandColor'));
-        }, 200);
+            $('.subunit.IRL').css('fill', pickRandomColor('irelandColor'));
+        }, 2000);
         window.setInterval(function() {
             $('.subunit.ENG').css('fill', pickRandomColor('ukColor'));
         }, 1000);
         window.setInterval(function() {
             $('.subunit.SCT').css('fill', pickRandomColor('scotlandColor'));
-        }, 550);
+        }, 500);
     });
 
     function pickRandomColor(element) {
