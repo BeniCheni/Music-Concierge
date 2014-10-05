@@ -4,21 +4,23 @@ Go Down the Drain
 This little project is beta on Heroku now. Please play and help me to test the app. :-)
 
 Attempting to bridge technology and art making this weekend. Will add border and main city names, maybe a word game too. Play and help me test, please...
-<br><br>
+
 <strong>British Isles Map painted by programming languages</strong> -
-<br><br>
+
 http://go-down-the-drain.herokuapp.com/secretTomb/BritishIsles.html
-<br><br>
+
 <strong>Music Concierge - Top Albums Search Engine using Last.fm (a music site) API and a word game based on the search results. Not very good yet. But it's there.</strong> -
-<br><br>
+
 http://go-down-the-drain.herokuapp.com/#
-<br><br>
+
+<img src="smiley.gif" alt="Smiley face">
+
 Sep 30th, 2014 - Added Word Game
-<br><br>
+
 Oct 1st, 2014 - Added dist to GitHub and deployed the app to Heroku
-<br><br>
+
 Oct 2nd, 2014 - Redesigned with Last.fm API
-<br><br>
+
 Oct 5th, 2014 - British Isles Map with colors
 
 Will continue building little bit by little bit...

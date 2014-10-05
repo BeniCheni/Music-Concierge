@@ -138,7 +138,8 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= yeoman.dist %>/{,*/}*',
-            '!<%= yeoman.dist %>/secretTomb/**',
+            '!<%= yeoman.dist %>/secretTomb/**',  // ignore this fold in grunt clean so that manual deploy of code in aap/secretTomb can be done done; need to think of a better workflow
+            '!<%= yeoman.dist %>/images/**',  // same for images
             '!<%= yeoman.dist %>/.git*'
           ]
         }]
