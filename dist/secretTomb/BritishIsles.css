@@ -1,0 +1,8 @@
+#description {
+    position: fixed !important;
+    position: absolute; /*ie6 */
+    top: 75px;
+    right: 25px;
+    text-align: right;
+    font-weight: bold;
+}
