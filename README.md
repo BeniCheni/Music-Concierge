@@ -5,33 +5,44 @@ This little project is beta on Heroku now. Please play and help me to test the a
 
 Attempting to bridge technology and art making this weekend. Will add border and main city names, maybe a word game too. Play and help me test, please...
 
-<strong>British Isles Map painted by programming languages</strong> -
+<h3>Release Note</h3>
+
+Oct 6th, 2014 - Added borders, country and city names
+
+Oct 5th, 2014 - British Isles Map with colors
+
+Oct 2nd, 2014 - Redesigned with Last.fm API
+
+Oct 1st, 2014 - Added dist to GitHub and deployed the app to Heroku
+
+Sep 30th, 2014 - Added Word Game
+
+<h4>British Isles Map painted by programming languages</h4>
 
 http://go-down-the-drain.herokuapp.com/secretTomb/BritishIsles.html
+
+<h4>Current Screens</h4>
+<img src="http://go-down-the-drain.herokuapp.com/images/Added Borders,%20Country%20and%20City%20Names.png" alt="British Isles" >
+
+<h4>Previous Screens</h4>
+
+<br><br>
 
 <img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_1.png" alt="British Isles #1" ><br><br>
 <img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_2.png" alt="British Isles #2" ><br><br>
 <img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_3.png" alt="British Isles #3" ><br><br>
 <img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_4.png" alt="British Isles #4" >
 
-<strong>Music Concierge - Top Albums Search Engine using Last.fm (a music site) API and a word game based on the search results. Not very good yet. But it's there.</strong> -
+<h4>Music Concierge - Top Albums Search Engine using Last.fm (a music site) API and a word game based on the search results. Not very good yet. But it's there.</h4> -
 
 http://go-down-the-drain.herokuapp.com/#
 
 <img src="http://go-down-the-drain.herokuapp.com/images/Music_Concierge_1.png" alt="Music Concierge #1" ><br><br>
 <img src="http://go-down-the-drain.herokuapp.com/images/Music_Concierge_2.png" alt="Music Concierge #2" >
 
-Sep 30th, 2014 - Added Word Game
-
-Oct 1st, 2014 - Added dist to GitHub and deployed the app to Heroku
-
-Oct 2nd, 2014 - Redesigned with Last.fm API
-
-Oct 5th, 2014 - British Isles Map with colors
-
 Will continue building little bit by little bit...
 
-<strong>To-Do:</strong>
+<h5>To-Do:</h5>
 <ul>
     <li>A bug with enter with a blank album name.  Need better handling.</li>
     <li>Another bug when the Answer button has to be clicked by the mouse but no response for Enter key.</li> 
