@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <meta charset="urf-8">
 <head>
+    <link rel="stylesheet" type="text/css" href="BritishIsles.css">
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="BritishIsles.js"></script>
-    <script src="BritishIslesColors.js"></script>
-    <link rel="stylesheet" type="text/css" href="BritishIsles.css">
+    <script src="BritishIsles.js?10062014"></script>
+    <script src="BritishIslesColors.js?10062014"></script>
 </head>
 <body>
     <div id="description">
+        <h3>DESCRIPTION</h3>
         <div>Background color refreshes randomly @ interval of 6 seconds.</div>
-        <div><strong>Color is: </strong><em id="backgrounColor"></em>.</div>
+        <div><strong>Color is: </strong><em id="backgroundColor"></em>.</div>
         <br>
-        <div>Color of this note you are reading refreshes randomly @ interval of 5 seconds.</div>
+        <div>Color of this description you are reading refreshes randomly @ interval of 5 seconds.</div>
         <div><strong>Color is: </strong><em id="noteColor"></em>.</div>
         <br>
         <div>Wales color refreshes randomly @ interval of 4 seconds.</div>
@@ -30,5 +31,11 @@
         <br>
         <div>Scotland color refreshes randomly every half (0.5) second.</div>
         <div><strong>Color is: </strong><em id="scotlandColor"></em>.</div>
+        <br>
+        <div>Boundaries flashes every 0.25 second, with two different random colors in UK/Scotland and Ireland/North Ireland.</div>
+        <br>
+        <div><strong>Boundary of UK/Scotland is: </strong><em id="ukScotlandColor"></em>.</div>
+        <br>
+        <div><strong>Boundary of Ireland/Northern Ireland is: </strong><em id="irelandNorthernIrelandColor"></em>.</div>
     </div>
 </body>
