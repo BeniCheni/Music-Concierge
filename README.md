@@ -3,27 +3,29 @@ Go Down the Drain
 <h2>(while the repo name is Music-Concierge)</h2>
 This little project is beta on Heroku now. Please play and help me to test the app. :-)
 
-Attempting to bridge technology and art making this weekend. Will add border and main city names, maybe a word game too. Play and help me test, please...
+Attempting to bridge technology and art making with this site with a Yeoman-scafolded Angular app on Heroku.  The app is also a chance for to practice D3, Bower, Node, Grunt, etc...  Basically a place to have fun while sharpening modern front-end technologies.
+
+Play and help me test, please... :)
 
 <h3>Release Note</h3>
 
 Oct 6th, 2014 - Added borders, country and city names
-
 Oct 5th, 2014 - British Isles Map with colors
-
 Oct 2nd, 2014 - Redesigned with Last.fm API
-
 Oct 1st, 2014 - Added dist to GitHub and deployed the app to Heroku
-
 Sep 30th, 2014 - Added Word Game
 
 <h4>British Isles Map painted by programming languages</h4>
 
 http://go-down-the-drain.herokuapp.com/secretTomb/BritishIsles.html
 
-<h4>Previous Stages</h4>
+<h4>Current Screens</h4>
+<img src="http://go-down-the-drain.herokuapp.com/images/Added Borders,%20Country%20and%20City%20Names.png" alt="British Isles" >
 
-<img src="http://go-down-the-drain.herokuapp.com/images/Added Borders, Country and City Names.png.png" alt="British Isles   " ><br><br>
+<h4>Previous Screens</h4>
+
+<br><br>
+
 <img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_1.png" alt="British Isles #1" ><br><br>
 <img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_2.png" alt="British Isles #2" ><br><br>
 <img src="http://go-down-the-drain.herokuapp.com/images/British_Isles_3.png" alt="British Isles #3" ><br><br>
