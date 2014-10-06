@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="d4cc5e76-4ddf-4004-a770-ef7ca4afa79a" name="Default" comment="">
+    <list id="d4cc5e76-4ddf-4004-a770-ef7ca4afa79a" name="Default" comment="" />
+    <list default="true" id="d0570aa9-07be-4e9d-8fa5-2d66f9f0f930" name="New changelist" comment="Added border, county and city names.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/Added Borders, Country and City Names.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/British_Isles_1.a4864fd2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/British_Isles_2.a16fcfa6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/British_Isles_3.204f6bbd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/British_Isles_4.b6e9962e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/Music_Concierge_1.12cbf72a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/Music_Concierge_2.0f63e9cf.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list default="true" id="d0570aa9-07be-4e9d-8fa5-2d66f9f0f930" name="New changelist" comment="Added border, county and city names." />
     <ignored path="musicConcierge.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +44,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BritishIsles.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BritishIsles.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/secretTomb/BritishIsles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37575758" vertical-offset="326" max-vertical-offset="1785">
+            <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1785">
               <caret line="30" column="68" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5940594" vertical-offset="195" max-vertical-offset="915">
+              <caret line="25" column="124" selection-start-line="25" selection-start-column="124" selection-end-line="25" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -86,11 +107,11 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/secretTomb/BritishIslesColors.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/bower_components/jQuery/.bower.json" />
         <option value="$PROJECT_DIR$/app/secretTomb/BritishIsles.css" />
         <option value="$PROJECT_DIR$/app/secretTomb/BritishIsles.js" />
         <option value="$PROJECT_DIR$/app/secretTomb/BritishIsles.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -329,6 +350,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Music-Concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Music-Concierge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -526,11 +565,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="22" width="1123" height="776" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3090909" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43617022" sideWeight="0.49913344" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43617022" sideWeight="0.49913344" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24936816" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -921,16 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44067797" vertical-offset="40" max-vertical-offset="810">
-          <caret line="20" column="113" selection-start-line="20" selection-start-column="113" selection-end-line="20" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23662885" vertical-offset="1969" max-vertical-offset="6240">
@@ -970,8 +999,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/secretTomb/BritishIsles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37575758" vertical-offset="326" max-vertical-offset="1785">
+        <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1785">
           <caret line="30" column="68" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5940594" vertical-offset="195" max-vertical-offset="915">
+          <caret line="25" column="124" selection-start-line="25" selection-start-column="124" selection-end-line="25" selection-end-column="124" />
           <folding />
         </state>
       </provider>
