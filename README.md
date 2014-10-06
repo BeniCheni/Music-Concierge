@@ -3,7 +3,7 @@ Go Down the Drain
 <h2>(while the repo name is Music-Concierge)</h2>
 This little project is beta on Heroku now. Please play and help me to test the app. :-)
 
-Attempting to bridge technology and art making with this site with a Yeoman-scafolded Angular app on Heroku.  The app is also a chance for to practice D3, Bower, Node, Grunt, etc...  Basically a place to have fun while sharpening modern front-end technologies.
+Attempting to bridge technology and art making with this site with a Yeoman-scaffolded Angular app on Heroku.  The app is also a chance for to practice D3, Bower, Node, Grunt, etc...  Basically a place to have fun while sharpening modern front-end technologies.
 
 Play and help me test, please... :)
 
